@@ -411,3 +411,25 @@ function square(size){
 }
 console.log(square(10));
 
+
+function squareWith(size, top,left,right,down){
+    let str = "";
+    for(let i = 0; i<= (2*size); i++){
+        str += top
+    }
+    str += "\n"
+    for(let i = 1; i<= size - 1; i++){
+        str += left
+        for(let j = 1; j < (2*size); j++){
+            str += " "
+        }
+        str += right
+        str += "\n"
+    }
+    for(let i = 0; i<= (2*size); i++){
+        str += down
+    }
+    return str
+}
+console.log(squareWith(10,"=","+","&","*"));
+
