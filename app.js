@@ -386,3 +386,28 @@ console.log(PatternTwenty);
 
 
 // ========================================================================
+
+
+// =========================================== New Pettern added ===========================================
+
+function square(size){
+    let str = "";
+    for(let i = 0; i<= (2*size); i++){
+        str += "="
+    }
+    str += "\n"
+    for(let i = 1; i<= size - 1; i++){
+        str += "|"
+        for(let j = 1; j < (2*size); j++){
+            str += " "
+        }
+        str +="|"
+        str += "\n"
+    }
+    for(let i = 0; i<= (2*size); i++){
+        str += "="
+    }
+    return str
+}
+console.log(square(10));
+
